@@ -1,0 +1,58 @@
+.container {
+  display: grid;
+  grid-template-columns: 50% auto;
+}
+
+.col {
+  padding: 0.4em 1.3em;
+}
+
+.color-dark {
+  background: #2885c4;
+}
+
+.color-light {
+  background: #57b3f1;
+}
+
+input.txt {
+  border: 0;
+  margin-bottom: 2em;
+  padding: 1em;
+  width: 80%;
+}
+
+input.btn {
+  background: #e74c3c;
+  border: 0;
+  color: white;
+  cursor: pointer;
+  display: block;
+  margin-bottom: 1em;
+  padding: 1em 3em;
+}
+
+.life-container {
+  background: #3fa0e1;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 0.5em;
+}
+
+.animation-ajout {
+  animation: slide-fade 1s;
+}
+
+@keyframes slide-fade {
+  from {
+    background-color: #a5f883;
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    background-color: #3fa0e1;
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,21 @@
+<h2>Détail de l'activité :</h2>
+
+<ol>
+  <li>
+    Nom de l'activité :
+    @if (modeEdition) {
+      <input type="text" [(ngModel)]="titreModifie" />
+    } @else {
+      <strong>{{ activite }}</strong>
+    }
+  </li>
+</ol>
+
+<button class="supprimer" (click)="supprimeElem(index)">Supprimer</button>
+
+@if (modeEdition) {
+  <button class="sauvegarder" (click)="sauvegarder()">Sauvegarder</button>
+} @else {
+  <button class="modifier" (click)="modifier()">Modifier</button>
+  <a class="retour" routerLink="/">Retour</a>
+}
